@@ -71,4 +71,9 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void take_the_food_names_as_input_add_price_respective_give_total_price(){
+
+    }
 }
