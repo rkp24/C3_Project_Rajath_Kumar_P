@@ -34,7 +34,5 @@ public class RestaurantService {
         return restaurants;
     }
 
-    public int calculateOrderTotal(String sweet_corn_soup, String vegetable_lasagne) {
-        return 0;
-    }
+
 }

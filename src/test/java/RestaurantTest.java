@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalTime;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
@@ -74,6 +76,13 @@ class RestaurantTest {
 
     @Test
     public void take_the_food_names_as_input_add_price_respective_give_total_price(){
+
+        //String itemName1=restaurant.getMenu().get(0).getName(); //Sweet corn soup --119
+        //String itemName2=restaurant.getMenu().get(0).getName(); //Vegetable lasagne --269
+        assertThat(restaurant.calculateOrderTotal( "Sweet corn soup","Vegetable lasagne"), greaterThan(0));
+        assertEquals(388,restaurant.calculateOrderTotal( "Sweet corn soup","Vegetable lasagne"));
+        // assertThat(388, greaterThan(0));
+        //two case we are testing one order value more than zero and total price is matching.
 
     }
 }
