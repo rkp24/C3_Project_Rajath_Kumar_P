@@ -77,8 +77,8 @@ class RestaurantServiceTest {
 
         //String itemName1=restaurant.getMenu().get(0).getName(); //Sweet corn soup --119
         //String itemName2=restaurant.getMenu().get(0).getName(); //Vegetable lasagne --269
-        assertThat(restaurant.calculateOrderTotal( "Sweet corn soup","Vegetable lasagne"), greaterThan(0));
-        assertEquals(388,restaurant.calculateOrderTotal( "Sweet corn soup","Vegetable lasagne"));
+        assertThat(service.calculateOrderTotal( "Sweet corn soup","Vegetable lasagne"), greaterThan(0));
+        assertEquals(388,service.calculateOrderTotal( "Sweet corn soup","Vegetable lasagne"));
         // assertThat(388, greaterThan(0));
         //two case we are testing one order value more than zero and total price is matching.
     }

@@ -67,7 +67,6 @@ public class Restaurant {
         return name;
     }
 
-    public int calculateOrderTotal(String sweet_corn_soup, String vegetable_lasagne) {
-        return 0;
+
     }
-}
+
